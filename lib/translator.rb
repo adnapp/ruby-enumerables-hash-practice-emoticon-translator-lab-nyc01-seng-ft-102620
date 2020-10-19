@@ -5,10 +5,11 @@ require 'pry'
 def load_library(path)
   # code goes here
   raw_load  = YAML.load_file(path)
-organized = raw_load.each_with_object({}) do |(name,data) , final|
-  binding.pry
+  organized = raw_load.each_with_object({}) do |(name,data) , final|
+    final[name] = {}
+    binding.pry
 
-    end
+  end
 end
 
 def get_japanese_emoticon
