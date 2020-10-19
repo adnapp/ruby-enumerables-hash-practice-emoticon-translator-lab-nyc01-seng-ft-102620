@@ -26,4 +26,5 @@ def get_english_meaning(path, input)
     if emoticon[:japanese] == input
       return emotion
     end
+  end
 end
