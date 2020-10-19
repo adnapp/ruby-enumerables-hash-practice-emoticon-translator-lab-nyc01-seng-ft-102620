@@ -10,7 +10,7 @@ def load_library(path)
     final[name][:english]= []
     final[name][:english][0] = data[0]
     final[name][:japanese]= []
-    final[name][:japanese][1] = data[1]
+    final[name][:japanese][0] = data[0]
     binding.pry
 
   end
