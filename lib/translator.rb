@@ -1,5 +1,5 @@
 # require modules here
-require "emoticons.yml"
+require "emoticons"
 require 'pry'
 binding.pry
 def load_library
