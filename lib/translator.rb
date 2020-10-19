@@ -3,16 +3,11 @@ require 'yaml'
 require 'pry'
 
 def load_library(path)
-  # code goes here
   raw_load  = YAML.load_file(path)
   organized = raw_load.each_with_object({}) do |(name,data) , final|
     final[name] = {}
-    #final[name][:english]= []
     final[name][:english] = data[0]
-  #  final[name][:japanese]= []
     final[name][:japanese] = data[1]
-    #binding.pry
-
   end
 end
 
