@@ -4,7 +4,7 @@ require 'pry'
 
 def load_library(path)
   # code goes here
-  raw_load  = YAML.load(path)
+  raw_load  = YAML.load_file(path)
   binding.pry
 organized = raw_load
 end
