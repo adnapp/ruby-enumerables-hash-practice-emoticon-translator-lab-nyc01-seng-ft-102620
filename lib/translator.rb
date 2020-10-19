@@ -18,6 +18,8 @@ def get_japanese_emoticon(path, input)
       return emoticon[:japanese]
     end
   end
+  puts "Sorry, that emoticon was not found"
+  return "Sorry, that emoticon was not found"
 end
 
 def get_english_meaning(path, input)
@@ -25,7 +27,6 @@ def get_english_meaning(path, input)
   data.each do |emotion, emoticon|
     if emoticon[:japanese] == input
       return emotion
-
     end
   end
   puts "Sorry, that emoticon was not found"
