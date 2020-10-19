@@ -7,7 +7,7 @@ def load_library(path)
   raw_load  = YAML.load_file(path)
   organized = raw_load.each_with_object({}) do |(name,data) , final|
     final[name] = {}
-    final[name][:english][0] = data[0]
+    final[name][:english]= []
 
     binding.pry
 
