@@ -8,7 +8,9 @@ def load_library(path)
   organized = raw_load.each_with_object({}) do |(name,data) , final|
     final[name] = {}
     final[name][:english]= []
-
+    final[name][:english][0] = data[0]
+    final[name][:japanese]= []
+    final[name][:japanese][1] = data[1]
     binding.pry
 
   end
