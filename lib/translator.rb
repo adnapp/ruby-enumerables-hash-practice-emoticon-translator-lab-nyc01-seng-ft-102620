@@ -13,8 +13,10 @@ end
 
 def get_japanese_emoticon(path, emoticon)
   # code goes here
-  load_library(path)
-binding.pry
+  data = load_library(path)
+  data.each do |emotion, emoticon|
+    binding.pry
+  end
 end
 
 def get_english_meaning
