@@ -4,9 +4,9 @@ require 'pry'
 
 def load_library(path)
   # code goes here
-  YAML.load(path)
-  #binding.pry
-
+  raw_load  = YAML.load(path)
+  binding.pry
+organized = raw_load
 end
 
 def get_japanese_emoticon
