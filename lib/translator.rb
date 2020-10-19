@@ -12,17 +12,18 @@ def load_library(path)
 end
 
 def get_japanese_emoticon(path, input)
-  # code goes here
   data = load_library(path)
   data.each do |emotion, emoticon|
     if emoticon[:english] == input
       return emoticon[:japanese]
     end
-  #  binding.pry
-
   end
 end
 
-def get_english_meaning
-  # code goes here
+def get_english_meaning(path, input)
+  data = load_library(path)
+  data.each do |emotion, emoticon|
+    if emoticon[:japanese] == input
+      return emotion
+    end
 end
